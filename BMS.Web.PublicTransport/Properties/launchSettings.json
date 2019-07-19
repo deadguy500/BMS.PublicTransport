@@ -1,0 +1,31 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:62247",
+      "sslPort": 44388
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "VasttrafikKey": "",
+        "VasttrafikDeviceId": "",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "BMS.Web.PublicTransport": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "VasttrafikKey": "",
+        "VasttrafikDeviceId": "2",
+        "ASPNETCORE_ENVIRONMENT": ""
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+﻿
+<div id="departure-table-app">
+    <departure-table bus-stop="Eriksbergstorget, Göteborg"
+                     bus-stop-endpoint="/api/vasttrafik/busstops"
+                     departure-endpoint="/api/vasttrafik/{accessToken}/{busstopname}/{limit}"
+                     show-count="7">
+    </departure-table>
+
+    <departure-table bus-stop="Eriksbergs Färjeläge, Göteborg"
+                     bus-stop-endpoint="/api/vasttrafik/busstops"
+                     departure-endpoint="/api/vasttrafik/{accessToken}/{busstopname}/{limit}"
+                     show-count="7">
+    </departure-table>
+
+    <departure-table bus-stop="Lindholmspiren, Göteborg"
+                     bus-stop-endpoint="/api/vasttrafik/busstops"
+                     departure-endpoint="/api/vasttrafik/{accessToken}/{busstopname}/{limit}"
+                     show-count="7">
+    </departure-table>
+</div>
+
+<script type="text/x-template" id="departureTableTemplate">
+    <div v-if="showResult == true">
+        <h3>{{ busStopName }}</h3>
+        <div class="small-text">Last updated: {{ serverDate }} {{ serverTime }}</div>
+        <div v-for="d in departureList">
+            <div class="row">
+                <div class="bus-number"><strong>{{ d.number }}</strong></div>
+                <div class="col-md-7"><strong>{{ d.direction }}</strong></div>
+                <div class="col-md-2 center-text"><strong>{{ d.planedTime }}</strong> <span v-if="d.realtime != null"><strong>({{ d.realtime }})</strong></span></div>
+                <div class="col-md-2 center-text"><strong>{{ d.track }}</strong></div>
+            </div>
+        </div>
+    </div>
+    <div v-else>
+        <div>Loading data...</div>
+    </div>
+</script>
+
+@section Scripts{
+    <script src="~/lib/vue/vue.js"></script>
+    <script src="~/lib/vue-resource/vue-resource.js"></script>
+    <script src="~/js/vasttrafik.departure.table.js"></script>
+}

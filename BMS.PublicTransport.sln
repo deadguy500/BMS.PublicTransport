@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMS.PublicTransport.Domain.Contract", "BMS.PublicTransport.Domain.Contract\BMS.PublicTransport.Domain.Contract.csproj", "{8020705C-F2D7-494C-AF2E-6EA71F289D90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMS.PublicTransport.Domain", "BMS.PublicTransport.Domain\BMS.PublicTransport.Domain.csproj", "{B21495B4-DD67-40EE-BC37-F1766D6ABA1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMS.Web.PublicTransport", "BMS.Web.PublicTransport\BMS.Web.PublicTransport.csproj", "{D5340DCF-A409-407F-9ABE-3692B8B088A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{F4B6A14C-8BA8-45E8-A0EE-69DEC11C52C9}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		build-debug-linux-arm.bat = build-debug-linux-arm.bat
+		build-release-linux-arm.bat = build-release-linux-arm.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8020705C-F2D7-494C-AF2E-6EA71F289D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8020705C-F2D7-494C-AF2E-6EA71F289D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8020705C-F2D7-494C-AF2E-6EA71F289D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8020705C-F2D7-494C-AF2E-6EA71F289D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B21495B4-DD67-40EE-BC37-F1766D6ABA1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B21495B4-DD67-40EE-BC37-F1766D6ABA1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B21495B4-DD67-40EE-BC37-F1766D6ABA1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B21495B4-DD67-40EE-BC37-F1766D6ABA1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5340DCF-A409-407F-9ABE-3692B8B088A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5340DCF-A409-407F-9ABE-3692B8B088A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5340DCF-A409-407F-9ABE-3692B8B088A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5340DCF-A409-407F-9ABE-3692B8B088A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19F7B2F1-8878-459F-AA06-83D32769062C}
+	EndGlobalSection
+EndGlobal

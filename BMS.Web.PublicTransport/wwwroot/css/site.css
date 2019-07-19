@@ -1,0 +1,92 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    margin-top: 2rem;
+}
+
+.row {
+    margin-bottom: 1rem;
+}
+
+    .row .row {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+[class*="col-"] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0px 1px 0px 1px;
+    /*background-color: rgba(86, 61, 124, .15);*/
+    background-color: #3A3F44;
+    /*border: 1px solid rgba(86, 61, 124, .2);*/
+    border: 1px solid #000000;
+}
+
+.center-text {
+    text-align: center !important;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bus-number {
+    border-radius: 5px;
+    background: rgb(0, 165, 220);
+    color: rgb(255, 255, 255);
+    padding: 10px 7px 7px 7px;
+    width: 46px;
+    height: 40px;
+    text-align: center !important;
+    float: left;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.small-text {
+    font-size: 10px;
+    margin: 5px 15px 10px 15px;
+}
